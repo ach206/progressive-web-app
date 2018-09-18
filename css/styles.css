@@ -32,9 +32,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav{
+	display: flex;
 }
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -109,6 +110,8 @@ nav h1 a {
   height: 50px;
   background-color: #3397DB;
   align-items: center;
+	display: flex;
+
 }
 .filter-options h2 {
   color: white;
