@@ -92,13 +92,14 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     row.appendChild(time);
 
     hours.appendChild(row);
+    
+    day.tabIndex = 0;
+    day.setAttribute('role', 'cell');
+    time.setAttribute('role', 'cell');
+    row.setAttribute('role', 'row');
+    row.tabIndex = 0;
+    time.tabIndex = 0;
   }
-  day.tabIndex = 0;
-  day.setAttribute('role', 'cell');
-  time.setAttribute('role', 'cell');
-  row.setAttribute('role', 'row');
-  row.tabIndex = 0;
-  time.tabIndex = 0;
 }
 
 /**
