@@ -119,7 +119,7 @@ nav h1 a {
   background-color: #D7ED4E;
   align-items: center;
 	display: flex;
-
+	flex-wrap: wrap;
 }
 .filter-options h2 {
   color: #000;
