@@ -77,6 +77,9 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
  */
 fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
   const hours = document.getElementById('restaurant-hours');
+  hours.setAttribute('role', 'table');
+  hours.setAttribute('aria-label', 'Hours of Operation');
+  hours.tabIndex = 0;
   for (let key in operatingHours) {
     const row = document.createElement('tr');
 
@@ -90,6 +93,12 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 
     hours.appendChild(row);
   }
+  day.tabIndex = 0;
+  day.setAttribute('role', 'cell');
+  time.setAttribute('role', 'cell');
+  row.setAttribute('role', 'row');
+  row.tabIndex = 0;
+  time.tabIndex = 0;
 }
 
 /**
@@ -112,6 +121,8 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
     ul.appendChild(createReviewHTML(review));
   });
   container.appendChild(ul);
+  container.tabIndex = 0;
+  container.setAttribute('title', 'reviews from customers');
 }
 
 /**
@@ -136,6 +147,12 @@ createReviewHTML = (review) => {
   li.appendChild(comments);
 
   return li;
+  li.tabIndex = 0;
+  li.setAttribute('title', `Review from ${review.name} on ${review.date}`);
+  li.setAttribute('role', 'dialog');
+  name.tabIndex= 0;
+  date.tabIndex= 0;
+  comments.tabIndex = 0;
 }
 
 /**
