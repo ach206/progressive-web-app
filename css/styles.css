@@ -114,8 +114,8 @@ nav h1 a {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
-  height: 50px;
+  width: 100vw;
+  height: 100%;
   background-color: #D7ED4E;
   align-items: center;
 	display: flex;
@@ -307,8 +307,8 @@ ul#restaurants-list li, #restaurant-cuisine {
 .inside #map-container {
   height: 50vw;
   position: relative;
-  right: 0; 
-  top: 0; 
+  right: 0;
+  top: 0;
   width: 100vw;
 }
 .reviewsMap {
