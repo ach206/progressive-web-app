@@ -73,16 +73,11 @@ nav h1 a {
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
-    background-color: #d7ed4e;
-    border-radius: 0 50px 50px 0;
+    background-color: #1b599d;
     font-size: 1em;
     margin: 0;
-    width: 30vw;
-    position: relative;
-    top: 100px;
-    left: auto;
+    width: 100vw;
 }
-
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
